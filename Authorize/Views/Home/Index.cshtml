@@ -1,0 +1,19 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<h1>Home</h1>
+<a asp-controller="Admin" asp-action="Mentor">[To Mentor]</a>
+<a asp-controller="Admin" asp-action="Student">[To Student]</a>
+<a asp-controller="Admin" asp-action="Index">[To Admin]</a>
+<p>
+    Name : @ViewBag.Name
+    <br />
+    isAunthificated : @ViewBag.isAuth
+</p>
+<br />
+@if (ViewBag.isAuth == true)
+{
+    <a asp-controller="Admin" asp-action="LogOff">[Log off]</a>
+}
