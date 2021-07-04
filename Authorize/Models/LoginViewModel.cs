@@ -4,6 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authentication;
 
 namespace Authorize.Models
 {
@@ -16,5 +17,7 @@ namespace Authorize.Models
         public string Password { get; set; }
 
         public string ReturnUrl { get; set; }
+
+        public IEnumerable<AuthenticationScheme> Providers { get; set; }
     }
 }

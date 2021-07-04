@@ -3,6 +3,20 @@
 
 <a asp-controller="Home" asp-action="Index">[ToHome]</a>
 
+<h3>Providers</h3>
+
+<form asp-controller="Admin" asp-action="ExternalSigIn" asp-route-returnUrl="@Model.ReturnUrl">
+    @foreach (var provider in Model.Providers)
+    {
+        <button type="submit"
+                name="provider"
+                value="@provider.Name">
+            @provider.DisplayName
+        </button>
+    }
+</form>
+
+
 <form asp-controller="Admin" asp-action="Login" method="post">
     <div asp-validation-summary="All"></div>
     <input hidden asp-for="ReturnUrl" />

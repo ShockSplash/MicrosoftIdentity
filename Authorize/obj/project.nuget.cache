@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "q8StXVVTNXFInQen4p7tBJ6atfTHpP8IDcqwbHeovJDkXhiBFgFmhAc5u45CIS4FzR//EM1esmS0pRbEIsj2jA==",
+  "dgSpecHash": "7+28evwNjGPUgeWl1+OpY34OoiZ3VwotCL+1nWsY2xqQML5oVVYNzT0TQtikogKDByPwE/vS7QeHh7sSMZ6hNQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\user\\source\\repos\\Authorize\\Authorize\\Authorize.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,7 @@
     "C:\\Users\\user\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.aspnetcore.authentication.cookies\\2.2.0\\microsoft.aspnetcore.authentication.cookies.2.2.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.aspnetcore.authentication.core\\2.2.0\\microsoft.aspnetcore.authentication.core.2.2.0.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.aspnetcore.authentication.facebook\\5.0.7\\microsoft.aspnetcore.authentication.facebook.5.0.7.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\5.0.7\\microsoft.aspnetcore.cryptography.internal.5.0.7.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\5.0.7\\microsoft.aspnetcore.cryptography.keyderivation.5.0.7.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.aspnetcore.dataprotection\\2.2.0\\microsoft.aspnetcore.dataprotection.2.2.0.nupkg.sha512",

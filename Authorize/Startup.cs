@@ -14,10 +14,10 @@ namespace Authorize
     {
         public Startup(IConfiguration configuration)
         {
-            Configuration = configuration;
+            _configuration = configuration;
         }
 
-        public IConfiguration Configuration { get; }
+        private readonly IConfiguration _configuration;
 
         public void ConfigureServices(IServiceCollection services)
         {
@@ -32,11 +32,12 @@ namespace Authorize
                 {
                     builder.RequireClaim(ClaimTypes.Role, "Student");
                 });
+            });
 
-                options.AddPolicy("SuperUser", builder =>
-                {
-                    builder.RequireClaim(ClaimTypes.Role, "SuperUser");
-                });
+            services.AddAuthentication().AddFacebook(config =>
+            {
+                config.AppId =_configuration["Authentication:Facebook:AppId"];
+                config.AppSecret = _configuration["Authentication:Facebook:AppSecret"];
             });
 
             services.AddDbContext<ApplicationDbContext>(options =>
